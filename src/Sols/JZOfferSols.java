@@ -1,5 +1,7 @@
 package Sols;
 
+import sun.reflect.generics.tree.Tree;
+
 import java.util.List;
 import java.util.Stack;
 
@@ -18,8 +20,8 @@ class ListNode {
 
 class TreeNode {
     int val;
-    TreeNode left;
-    TreeNode right;
+    TreeNode left = null;
+    TreeNode right = null;
     TreeNode(int x) { val = x; }
 }
 
@@ -236,5 +238,47 @@ public class JZOfferSols {
         }
         mid.next = pre;
         return mid;
+    }
+
+    public ListNode Merge(ListNode list1,ListNode list2) {
+        // merge two monotonically increasing lists
+        if (list1 == null) {return list2;}
+        if (list2 == null) {return list1;}
+        if (list1.val < list2.val) {
+            ListNode tmp = Merge(list1.next, list2.next);
+            ListNode res = new ListNode(list1.val);
+            res.next = new ListNode(list2.val);
+            res.next.next = tmp;
+            return res;
+        } else {
+            ListNode tmp = Merge(list1.next, list2.next);
+            ListNode res = new ListNode(list2.val);
+            res.next = new ListNode(list1.val);
+            res.next.next = tmp;
+            return res;
+        }
+    }
+
+    public boolean subTree(TreeNode root1, TreeNode root2) {
+        if (root1 == null && root2 == null) {
+            return true;
+        }
+
+        if (root1 == null && root2 != null) {
+            return false;
+        }
+
+        if (root1 != null && root2 == null) {
+            return true;
+        }
+        return (root1.val == root2.val) && subTree(root1.left, root2.left) && subTree(root1.right, root2.right);
+    }
+
+    public boolean HasSubtree(TreeNode root1,TreeNode root2) {
+        if (root1 == null || root2 == null) {
+            return false;
+        } else {
+            return subTree(root1, root2) || subTree(root1.left, root2) || subTree(root1.right, root2);
+        }
     }
 }
