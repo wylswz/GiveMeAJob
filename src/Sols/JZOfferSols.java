@@ -130,16 +130,23 @@ public class JZOfferSols {
         return sec;
     }
     public int JumpFloor(int target) {
+        // A frog can jump one or two steps
+        // how many methods to jump to targetth floor
         if (target == 1) return 1;
         if (target == 2) return 2;
+        // Recursively solve the question
         return this.JumpFloor(target - 1) + this.JumpFloor(target - 2);
     }
 
     public int JumpFloorII(int target) {
+        // A frog can jump any steps
+        // M(N) = M(n-1) + M(n-2) + ... + M(1)
+        // Keep substituting, we get 2^(target - 1) as result
         return (int)Math.pow(2, target-1);
     }
 
     public int RectCover(int target) {
+        // how many ways to cover 2 * n rect with many 2 * 1 rects
         if (target == 1) return 1;
         if (target == 2) return 2;
         return this.RectCover(target - 1) + this.RectCover(target - 2);
