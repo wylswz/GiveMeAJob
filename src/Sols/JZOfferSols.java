@@ -1,9 +1,11 @@
 package Sols;
 
+import java.util.List;
 import java.util.Stack;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+
 
 class ListNode {
          int val;
@@ -89,5 +91,143 @@ public class JZOfferSols {
         }
 
         return res;
+    }
+
+    public int minNumberInRotateArray(int [] array) {
+        if (array.length == 0) {
+            return 0;
+        }
+        if (array.length == 1) {
+            return array[0];
+        }
+        if (array.length == 2) {
+            return array[0] <= array[1] ? array[0] : array[1];
+        }
+        for (int i=1; i< array.length; i ++) {
+            int thisElem = array[array.length - i];
+            int nextElem = array[array.length - i - 1];
+            if (thisElem < nextElem) {
+                return thisElem;
+            }
+        }
+
+        return array[0];
+    }
+
+    public int Fibonacci(int n) {
+        if (n == 0) return 0;
+        if (n == 1) return 1;
+
+        int fst = 0, sec = 1;
+        // if return fst, then start from 0
+        // if return sec, then start from 1
+        for (int i = 1; i < n; i ++) {
+            int nxt = fst + sec;
+            fst = sec;
+            sec = nxt;
+        }
+
+        return sec;
+    }
+    public int JumpFloor(int target) {
+        if (target == 1) return 1;
+        if (target == 2) return 2;
+        return this.JumpFloor(target - 1) + this.JumpFloor(target - 2);
+    }
+
+    public int JumpFloorII(int target) {
+        return (int)Math.pow(2, target-1);
+    }
+
+    public int RectCover(int target) {
+        if (target == 1) return 1;
+        if (target == 2) return 2;
+        return this.RectCover(target - 1) + this.RectCover(target - 2);
+    }
+
+    public int NumberOf1(int n) {
+        // Number of 1s in binary number
+        // complementary for negative
+        int base = 0;
+        int tmp = n;
+
+        if (n < 0) {
+            tmp = ((int)Math.pow(2,31) + n + 1);
+            base = 1;
+        }
+        System.out.println(tmp);
+        while (tmp != 0) {
+
+            base += tmp % 2;
+            tmp = tmp / 2;
+        }
+
+        return base;
+
+    }
+
+    public void swap(int [] array, int from, int to) {
+        int tmp = array[from];
+        array[from] = array[to];
+        array[to] = tmp;
+    }
+    public void reOrderArray(int [] array) {
+        int ptr1 = 0;
+        int ptr2 = 1;
+        int numOdd = 0;
+        int counter = 0;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i]%2 == 1) {
+                numOdd += 1;
+            }
+        }
+        while (counter < numOdd) {
+            while (array[ptr1] % 2 == 0) {
+                if (ptr2 < array.length) {
+                    this.swap(array, ptr1, ptr2);
+                    ptr2 += 1;
+                }
+
+            }
+            ptr1 += 1;
+            ptr2 = ptr1 + 1;
+            counter += 1;
+        }
+        for (int e : array) {
+            System.out.println(e);
+        }
+    }
+    public ListNode FindKthToTail(ListNode head,int k) {
+        // Kth node from tail
+        int ptr = 0;
+        int length = 0;
+        ListNode thisNode = head;
+        ArrayList<ListNode> cache = new ArrayList<ListNode>();
+        while (thisNode != null) {
+            cache.add(thisNode);
+            length += 1;
+            thisNode = thisNode.next;
+        }
+        if (length - k >= cache.size() || length - k <= 0) {
+            return null;
+        }
+        return cache.get(length - k - 1);
+    }
+
+    public ListNode ReverseList(ListNode head) {
+        // reverse the linked list
+        if (head == null) {return null;}
+        if (head.next == null) {return head;}
+        ListNode pre = null;
+        ListNode mid = head;
+        ListNode post = head.next;
+        while (post != null) {
+            mid.next = pre;
+            pre = mid;
+            mid = post;
+            post = mid.next;
+        }
+        mid.next = pre;
+        return mid;
     }
 }
