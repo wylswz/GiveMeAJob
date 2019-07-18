@@ -281,4 +281,17 @@ public class JZOfferSols {
             return subTree(root1, root2) || subTree(root1.left, root2) || subTree(root1.right, root2);
         }
     }
+
+    public void Mirror(TreeNode root) {
+        if (root == null) {return ;}
+        TreeNode tmp = root.left;
+        root.left = root.right;
+        root.right = tmp;
+        Mirror(root.left);
+        Mirror(root.right);
+
+
+
+
+    }
 }
