@@ -289,9 +289,52 @@ public class JZOfferSols {
         root.right = tmp;
         Mirror(root.left);
         Mirror(root.right);
+    }
 
+    public ArrayList<Integer> cwLayer(int [][] matrix, int startR, int startC) {
+        int R = startR;
+        int C = startC;
+        ArrayList<Integer> res = new ArrayList<Integer>();
+        res.add(matrix[R][C]);
+        int layerShapeR = matrix.length - 2*startR;
+        int layerShapeC = matrix[0].length - 2 * startC;
+        // inc col
+        for (int i = 0; i < layerShapeC-1; i++) {
+            res.add(matrix[R][++C]);
+        }
+        // inc row
+        for (int i = 0; i < layerShapeR-1; i++) {
+            res.add(matrix[++R][C]);
 
+        }
+        // dec col
+        if (layerShapeR > 1) {
+            // no need to turn back for one row cases
+            for (int i = 0; i < layerShapeC-1; i++) {
+                res.add(matrix[R][--C]);
+            }
+        }
 
+        // dec row
+        if (layerShapeC > 1) {
+            for (int i = 0; i < layerShapeR-2; i++) {
+                res.add(matrix[--R][C]);
 
+            }
+        }
+        return res;
+    }
+    public ArrayList<Integer> printMatrix(int [][] matrix) {
+        ArrayList<Integer> res =  new ArrayList<Integer>();
+        int x = Math.min(matrix.length/2, matrix[0].length/2);
+
+        for (int i = 0; i < x; i++) {
+            res.addAll(cwLayer(matrix, i, i));
+        }
+
+        if (res.size() < matrix.length * matrix[0].length) {
+            res.addAll(cwLayer(matrix,x, x));
+        }
+        return res;
     }
 }
