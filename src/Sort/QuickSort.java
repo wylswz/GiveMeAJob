@@ -49,8 +49,17 @@ public class QuickSort {
         return array;
     }
 
+    /**
+     *
+     * @param array
+     * @param lo
+     * @param hi
+     * @param k
+     * @return index of smallest elem
+     */
     public static int kthSmallest(int [] array, int lo, int hi, int k) {
         // Find kth smallest element in an array
+
         int pivot = partition(array,lo, hi);
         if (pivot + 1 == k) {
             return array[pivot];

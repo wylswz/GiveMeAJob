@@ -1,7 +1,9 @@
 package Sols;
 
 import sun.reflect.generics.tree.Tree;
+import Sort.QuickSort;
 
+import java.util.HashSet;
 import java.util.*;
 
 class RandomListNode {
@@ -185,4 +187,88 @@ public class JZOfferSolsPart2 {
         return 0;
     }
 
+    public ArrayList<Integer> GetLeastNumbers_Solution(int [] input, int k) {
+
+
+        Arrays.sort(input);
+        ArrayList<Integer> res = new ArrayList<>();
+        for (int i=0; i<k; i++) {
+            res.add(input[i]);
+        }
+
+        return res;
+    }
+
+    public int FindGreatestSumOfSubArray(int[] array) {
+        if (array.length == 0) {
+            return 0;
+        }
+        int [] maxExp = new int[array.length];
+        int res = array[0];
+        maxExp[0] = array[0];
+        for (int i = 1; i< maxExp.length; i++) {
+            maxExp[i] = Math.max(array[i],maxExp[i-1] + array[i]);
+            if (maxExp[i] > res) {
+                res = maxExp[i];
+            }
+        }
+        return res;
+
+    }
+
+    public int NumberOf1Between1AndN_Solution(int n) {
+        int len = Integer.toString(n).length();
+        int res = 1;
+        int tmp = 1;
+        int power = 1;
+        int factor;
+        for (int i=2; i<len ; i++) {
+            power *= 10;
+
+            factor = 9;
+            tmp = tmp * factor + power;
+            System.out.println(tmp);
+            res += tmp;
+
+        }
+        return res;
+    }
+    public String PrintMinNumber(int [] numbers) {
+        String res = "";
+        Comparator<Integer> a = new Comparator<Integer>() {
+            public int compare(Integer o1, Integer o2) {
+                return (o1.toString() + o2.toString()).compareTo(o2.toString() + o1.toString());
+            }
+        };
+        Integer [] test = new Integer[numbers.length];
+        for (int i=0; i<numbers.length;i++) {
+            test[i] = numbers[i];
+        }
+        Arrays.sort(test, a);
+        for (int e : test) {
+            res += e;
+        }
+        return res;
+    }
+
+    /**
+     * Find nth ugly number
+     * @param index
+     * @return
+     */
+    public int GetUglyNumber_Solution(int index) {
+
+        if (index < 7)return index;
+        int [] res = new int[index];
+        res[0] = 1;
+        int t2 = 0, t3 = 0, t5 = 0, i;
+        for (i = 1; i < index; ++i)
+        {
+            res[i] = Math.min(res[t2] * 2, Math.min(res[t3] * 3, res[t5] * 5));
+            if (res[i] == res[t2] * 2)t2++;
+            if (res[i] == res[t3] * 3)t3++;
+            if (res[i] == res[t5] * 5)t5++;
+        }
+        return res[index - 1];
+    }
 }

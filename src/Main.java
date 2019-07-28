@@ -9,5 +9,7 @@ public class Main {
 
         System.out.println(part2.IsPopOrder(new int[]{1,2,3,4,5}, new int[]{4,3,5,1,2}));
         System.out.println(part2.VerifySquenceOfBST(new int[] {4,6,7,5}));
+        System.out.println(part2.GetLeastNumbers_Solution(new int[] {1,2,3,4,5}, 3));
+        System.out.println(part2.GetUglyNumber_Solution(1500));
     }
 }
