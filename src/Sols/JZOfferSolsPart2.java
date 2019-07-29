@@ -271,4 +271,100 @@ public class JZOfferSolsPart2 {
         }
         return res[index - 1];
     }
+
+    public int FirstNotRepeatingChar(String str) {
+        HashMap<Character, Integer> counter = new HashMap<>();
+        Character c;
+        for (int i=0;i<str.length(); i++) {
+            c = str.charAt(i);
+            counter.put(c, counter.getOrDefault(c, 0) + 1);
+        }
+        for (int i=0;i<str.length(); i++) {
+            c = str.charAt(i);
+            if (counter.get(c).equals(1)) {
+                return i;
+            }
+        }
+        return -1;
+
+
+    }
+
+    public int binaryFilter (int [] array, int number, int from, int to) {
+        int mid = from + (to-from)/2;
+        if (from >= to) {
+            return number < array[from] ? from : from + 1;
+        }
+        if (array[mid] < number) {
+            return binaryFilter(array, number, mid + 1, to);
+        } else {
+            return binaryFilter(array, number, from, mid - 1);
+        }
+    }
+
+    public int InversePairs(int [] array) {
+        // if prev > after, It's a inverse pair
+        // result mod 1000000007
+        final int mod = 1000000007;
+        if (array.length <= 1) {
+            return 0;
+        }
+        int counter = 0;
+        int i = 0;
+        int j = 1;
+        while (j < array.length) {
+            if (array[i] < array[j]) {
+                i+=1;
+                j+=1;
+            } else {
+                counter += i + 1 - binaryFilter(array, array[j], 0, i);
+                Arrays.sort(array,0,j + 1);
+                i += 1;
+                j += 1;
+            }
+        }
+
+        return counter % mod;
+    }
+
+
+    public int GetNumberOfK(int [] array , int k) {
+        int index = Arrays.binarySearch(array, k);
+        if (index < 0) {
+            return 0;
+        }
+        else {
+            int counter = 1;
+            for (int i=index-1;i>=0;i--) {
+                if (array[i] == k) {
+                    counter ++;
+                } else {
+                    break;
+                }
+            }
+            for (int i=index+1;i<array.length;i++) {
+                if (array[i] == k) {
+                    counter ++;
+                } else {
+                    break;
+                }
+            }
+
+            return counter;
+        }
+    }
+
+    public int TreeDepth(TreeNode root) {
+        if(root == null) {return 0;}
+        return Math.max(1 + TreeDepth(root.left), 1 + TreeDepth(root.right));
+    }
+
+    public boolean IsBalanced_Solution(TreeNode root) {
+        if (root == null) { return true;}
+        return Math.abs(TreeDepth(root.left) - TreeDepth(root.right)) < 2 && IsBalanced_Solution(root.left) && IsBalanced_Solution(root.right);
+    }
+
+    public void FindNumsAppearOnce(int [] array,int num1[] , int num2[]) {
+
+    }
 }

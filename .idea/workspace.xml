@@ -2,24 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65debb43-993d-48f7-8056-452a69881bfb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/JavaBasic/JavaThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Sols/Shopee.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GiveMeAJob/META-INF/GiveMeAJob.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/GiveMeAJob/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GiveMeAJob/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GiveMeAJob/Sols/JZOfferSolsPart2$2.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/GiveMeAJob/Sols/JZOfferSolsPart2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GiveMeAJob/Sols/JZOfferSolsPart2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GiveMeAJob/Sols/RandomListNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GiveMeAJob/Sols/RandomListNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GiveMeAJob/Sort/QuickSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GiveMeAJob/Sort/QuickSort.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Sols/JZOfferSolsPart2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sols/JZOfferSolsPart2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Sort/QuickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sort/QuickSort.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -41,7 +45,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="JavaThread" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="JavaBasic.JavaThread" />
+      <module name="GiveMeAJob" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="JavaBasic.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="GiveMeAJob" />
@@ -49,9 +66,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Shopee" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Sols.Shopee" />
+      <module name="GiveMeAJob" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Sols.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Shopee" />
+        <item itemvalue="Application.JavaThread" />
       </list>
     </recent_temporary>
   </component>
@@ -73,7 +105,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
