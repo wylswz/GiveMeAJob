@@ -365,6 +365,77 @@ public class JZOfferSolsPart2 {
     }
 
     public void FindNumsAppearOnce(int [] array,int num1[] , int num2[]) {
+        // Only two numbers in array only occur once, find these two numbers,
+        // put them in num1 and num2 (which has len 1)
+        HashSet<Integer> resSet = new HashSet<>();
+        for (int i : array) {
+            if (!resSet.contains(i)){
+                resSet.add(i);
+            } else {
+                resSet.remove(i);
+            }
+        }
+        Iterator it = resSet.iterator();
+        num1[0] = (int)it.next();
+        num2[0] = (int)it.next();
+    }
+
+    public ArrayList<ArrayList<Integer> > FindContinuousSequence(int sum) {
+        double y;
+        ArrayList<ArrayList<Integer> > res = new ArrayList<>();
+        for (int x =1; x < 100; x ++) {
+            y = (Math.sqrt(1+4*(x*x-x+2*sum))-1)/2;
+            if (y - (int)y < 0.000001 && y > x) {
+                ArrayList<Integer> temp = new ArrayList<>();
+                for (int i=x; i<=y; i++) {
+                    temp.add(i);
+                }
+                res.add(temp);
+            }
+        }
+        return res;
+    }
+
+    public String LeftRotateString(String str,int n) {
+        if (str.length() ==0) {
+            return "";
+        }
+        int newN = n % str.length();
+        return str.substring(n, str.length()) + str.substring(0,n);
+    }
+
+    public String ReverseSentence(String str) {
+
+        String[] tokens = str.split(" ");
+        if (tokens.length == 0) return str;
+        String base = "";
+        for (String s : tokens) {
+            base = s + " " +base;
+        }
+        return base.substring(0, base.length()-1);
+    }
+
+    public boolean isContinuous(int [] numbers) {
+        if (numbers.length == 0) {return false;}
+        Arrays.sort(numbers);
+        ArrayList<Integer> nonZero = new ArrayList<>();
+        int jokers = 0;
+        int errs = 0;
+        for (int i : numbers) {
+            if (i==0) {
+                jokers += 1;
+            } else {
+                nonZero.add(i);
+            }
+        }
+        for (int i=0; i< nonZero.size() - 1; i++) {
+            int inc = nonZero.get(i+1) - nonZero.get(i) - 1;
+            if (inc == -1) {return false;}
+            errs += inc;
+        }
+        return jokers >= errs;
 
     }
+
+
 }
