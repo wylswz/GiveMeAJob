@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65debb43-993d-48f7-8056-452a69881bfb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Sols/JZOfferSolsPart3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/GiveMeAJob/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GiveMeAJob/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/GiveMeAJob/Sols/JZOfferSolsPart2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GiveMeAJob/Sols/JZOfferSolsPart2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GiveMeAJob/Sols/Shopee.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GiveMeAJob/Sols/Shopee.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Sols/JZOfferSolsPart2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sols/JZOfferSolsPart2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Sols/Shopee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sols/Shopee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sols/JZOfferSolsPart3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sols/JZOfferSolsPart3.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
