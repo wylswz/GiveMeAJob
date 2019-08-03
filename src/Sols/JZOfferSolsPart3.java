@@ -3,6 +3,7 @@ package Sols;
 import com.sun.scenario.effect.impl.state.AccessHelper;
 import sun.reflect.generics.tree.Tree;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
@@ -145,8 +146,9 @@ public class JZOfferSolsPart3 {
 
         }
     }
-    public int movingCount(int threshold, int rows, int cols)
 
+
+    public int movingCount(int threshold, int rows, int cols)
     {
         int[][] visited = new int[rows][cols];
         int count = 0;
@@ -167,6 +169,11 @@ public class JZOfferSolsPart3 {
     }
 
 
+    /**
+     * Get next node in a In-order traversal
+     * @param pNode
+     * @return
+     */
     public TreeLinkNode GetNext(TreeLinkNode pNode)
     {
         if (pNode == null) return null;
@@ -191,6 +198,12 @@ public class JZOfferSolsPart3 {
         }
     }
 
+    /**
+     * Check if two binary trees are mirror
+     * @param t1
+     * @param t2
+     * @return
+     */
     boolean isMirror(TreeNode t1, TreeNode t2) {
         if (t1 == null && t2 == null) {
             return true;
@@ -204,10 +217,108 @@ public class JZOfferSolsPart3 {
         return isMirror(t1.left, t2.right )&& isMirror(t1.right, t2.left);
     }
 
+    /**
+     * Check if a binary tree is symmetric
+     * (Check if subtrees are mirror)
+     * @param pRoot
+     * @return
+     */
     boolean isSymmetrical(TreeNode pRoot)
     {
         if (pRoot == null) return false;
         return isMirror(pRoot.left, pRoot.right);
+    }
+
+
+
+    public ArrayList<Integer> streamBuffer = new ArrayList<>();
+    public void Insert(Integer num) {
+        for (int i =0; i<streamBuffer.size(); i++) {
+            if (num<streamBuffer.get(i)) {
+                streamBuffer.add(i, num);
+
+                return;
+            }
+        }
+        streamBuffer.add(streamBuffer.size(), num);
+    }
+
+    /**
+     * Find Median of a data stream
+     * @return
+     */
+    public Double GetMedian() {
+        if (streamBuffer.size() % 2 == 1) {
+            return streamBuffer.get(streamBuffer.size()/2) + 0.0;
+        } else {
+            return (streamBuffer.get(streamBuffer.size()/2) + streamBuffer.get(streamBuffer.size()/2 - 1) + 0.0)/2;
+        }
+    }
+
+    /**
+     * Find kth smallest node in binary search tree
+     * (Find kth elem in a in-order traverse)
+     * @param pRoot
+     * @param k
+     * @return
+     */
+    public Integer traversCounter = 0;
+    public ArrayList<TreeNode> stack = new ArrayList<>();
+    public void traverse_ad1af(TreeNode t, int k){
+
+        if (traversCounter >k) {
+            return;
+        }
+        if (t == null) {return;}
+        traverse_ad1af(t.left, k);
+        traversCounter += 1;
+        if (traversCounter == k) {
+            stack.add(t);
+            return;
+        }
+        traverse_ad1af(t.right, k);
+    }
+
+    public TreeNode KthNode(TreeNode pRoot, int k) {
+        traverse_ad1af(pRoot, k);
+        if (stack.size() == 0) return null;
+        return stack.get(0);
+
+    }
+
+    public boolean matchChar(char a, char b) {
+        return (a==b) || (a=='.') || (b=='.');
+    }
+    public boolean match(char[] str, char[] pattern)
+    {
+        if (str.length == 0 && pattern.length == 0) {
+            return true;
+        } else if(str.length != 0 && pattern.length == 0) {
+            return false;
+        } else if (str.length == 0) {
+            return (pattern.length == 2 && pattern[1]=='*');
+        }
+        if (pattern.length == 1) {
+            return str.length == 1 && matchChar(str[0],pattern[0]);
+        }
+
+        if (matchChar(str[0], pattern[0])) {
+            if (pattern[1] == '*') {
+                return match(Arrays.copyOfRange(str,1,str.length),pattern);
+            } else {
+                return match(Arrays.copyOfRange(str,1,str.length),Arrays.copyOfRange(pattern,1,pattern.length));
+            }
+        } else {
+            if (pattern[1] == '*') {
+                return match(Arrays.copyOfRange(str,1,str.length),Arrays.copyOfRange(pattern,2,pattern.length));
+            } else {
+                return match(Arrays.copyOfRange(str,1,str.length),Arrays.copyOfRange(pattern,1,pattern.length));
+            }
+
+        }
+
+
+
     }
 
 }
