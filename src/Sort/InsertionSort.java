@@ -1,4 +1,4 @@
 package Sort;
 
-public class InsertionSort {
+public class  InsertionSort {
 }

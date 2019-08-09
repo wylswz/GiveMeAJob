@@ -6,6 +6,7 @@ import Sols.JZOfferSolsPart3;
 import Sort.BubbleSort;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class Main {
     public static <T> void printArray(T[] array) {
@@ -21,11 +22,7 @@ public class Main {
         JZOfferSolsPart2 part2 = new JZOfferSolsPart2();
         JZOfferSolsPart3 part3 = new JZOfferSolsPart3();
         JZOfferPart4 part4 = new JZOfferPart4();
-//        char[] test = (part4.match());
-//        for (char c : test) {
-//            System.out.println(c);
-//        }
-        System.out.println(part4.match(new char[] {'a','a','a'}, new char[] {'a', 'b', '*', 'a', '*', 'c','*', 'a'}));
+        System.out.println(part4.duplicate(new int[]{}, 0, new int[]{-1}));
 
     }
 }

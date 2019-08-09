@@ -1,9 +1,6 @@
 package Sols;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.HashSet;
+import java.util.*;
 
 public class JZOfferPart4 {
 
@@ -22,6 +19,7 @@ public class JZOfferPart4 {
     }
 
     public boolean matchExact(char[] a, char[] b) {
+
         if (a.length!=b.length) return false;
         for (int i=0; i<a.length; i++) {
             if (!matchChar(a[i], b[i])) return false;
@@ -119,5 +117,110 @@ public class JZOfferPart4 {
             }
         }
         return false;
+    }
+
+
+    public HashMap<Character, Integer> occuranceCounter = new HashMap<>();
+    public LinkedList<Character> onceChar = new LinkedList<>();
+    //Insert one char from stringstream
+    public void Insert(char ch)
+    {
+        occuranceCounter.put(ch, occuranceCounter.getOrDefault(ch, 0)+1);
+        if(occuranceCounter.get(ch) == 1) {
+            onceChar.add(ch);
+        } else {
+            onceChar.remove(new Character(ch));
+            // Otherwise the ch will be treated as index
+        }
+    }
+    //return the first appearence once char in current stringstream
+    public char FirstAppearingOnce()
+    {
+        if (onceChar.size() == 0) {
+            return '#';
+        }
+        return onceChar.get(0);
+    }
+
+    public ListNode EntryNodeOfLoop(ListNode pHead)
+    {
+        HashSet<ListNode> used = new HashSet<>();
+        while(pHead != null) {
+            if(used.contains(pHead)) {
+                return pHead;
+            } else {
+                used.add(pHead);
+                pHead = pHead.next;
+            }
+        }
+        return null;
+    }
+
+    /**
+     * The linked list is sorted
+     * @param pHead
+     * @return
+     */
+    public ListNode deleteDuplication(ListNode pHead)
+    {
+        ListNode tmp = pHead;
+
+        if (tmp == null) {
+            return null;
+        }
+        ListNode res = new ListNode(pHead.val);
+        ListNode resIt = res;
+        while (tmp!= null) {
+            if (tmp.next == null) {
+                resIt.next = new ListNode(tmp.val);
+                resIt = resIt.next;
+                break;
+            }
+            if (tmp.next.val == tmp.val) {
+                int dup = tmp.val;
+                while(tmp.val == dup) {
+                    tmp = tmp.next;
+
+                }
+            } else {
+                resIt.next = new ListNode(tmp.val);
+                resIt = resIt.next;
+                tmp = tmp.next;
+            }
+        }
+        return res;
+    }
+
+    /**
+     * Put first duplicated in duplication array
+     * @param numbers
+     * @param length
+     * @param duplication
+     * @return
+     */
+    public boolean duplicate(int numbers[],int length,int [] duplication) {
+        HashSet<Integer> set = new HashSet<>();
+        if (length == 0) {
+            return false;
+        }
+        for (int n : numbers) {
+            if (set.contains(n)) {
+
+                duplication[0] = n;
+                return true;
+            } else {
+                set.add(n);
+            }
+        }
+        return false;
+    }
+
+    /**
+     * B[i] is the product of all elements in A except A[i]
+     * @param A
+     * @return
+     */
+    public int[] multiply(int[] A) {
+
     }
 }

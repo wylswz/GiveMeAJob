@@ -7,9 +7,6 @@ import java.util.Scanner;
 
 public class Shopee {
 
-    public int[] wildcard(String wc, String target) {
-        return new int[]{};
-    }
 
     public static int mahattan(int[] p1, int[] p2) {
         return Math.abs(p1[0] - p2[0]) + Math.abs(p1[1] - p2[1]);
@@ -52,7 +49,7 @@ public class Shopee {
     }
 
     public static void main(String [] args) {
-        flitAppend();
+        wildcard("*.com", "shopeemobile.com");
 
     }
 
@@ -135,5 +132,64 @@ public class Shopee {
                 System.out.print(" ");
             }
         }
+    }
+
+    public static boolean charEq(char a, char b) {
+        return a == b || (a == '*' || b == '*');
+    }
+    /**
+     * Match *
+     * Print out from index and length
+     * @param pattern
+     * @param string
+     */
+    public static String strDup(String s, int t) {
+        String tmp = "";
+        for (int i=0;i<t;i++) {
+            tmp = tmp + s;
+        }
+        return tmp;
+    }
+    public static void strMatch(String str1, String str2) {
+        int startAt = 0;
+        while (startAt <= str2.length() - str1.length()) {
+            boolean match = true;
+            for (int i=0;i<str1.length();i++) {
+                if (!charEq(str1.charAt(i),str2.charAt(startAt + i))) {
+                    match = false;
+                }
+            }
+            if (match) {
+                System.out.print(startAt+" " +str1.length());
+            }
+
+
+            startAt ++;
+        }
+    }
+    public static void wildcard(String pattern, String string) {
+        int wildcardCount = string.length() - (pattern.length() - 1);
+        int starIndex = 0;
+        for (int i=0; i<pattern.length(); i++) {
+            if (pattern.charAt(i) == '*') {
+                starIndex = i;
+                break;
+            }
+        }
+
+        for (int stars=0; stars <=wildcardCount; stars ++) {
+            String tmp;
+            if (starIndex >= pattern.length() - 1)
+            {
+                tmp = pattern.substring(0, starIndex) + strDup("*", stars);
+            } else {
+                tmp = pattern.substring(0, starIndex) + strDup("*", stars) + pattern.substring(starIndex + 1);
+            }
+
+            System.out.println(tmp);
+            strMatch(tmp, string);
+        }
+
+
     }
 }
