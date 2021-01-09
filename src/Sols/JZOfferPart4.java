@@ -221,6 +221,6 @@ public class JZOfferPart4 {
      * @return
      */
     public int[] multiply(int[] A) {
-
+        return null;
     }
 }
