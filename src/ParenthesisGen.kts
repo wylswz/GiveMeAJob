@@ -73,3 +73,4 @@ fun sol(n: Int): List<String>{
 }
 
 println(sol(3))
+println(sol(0))

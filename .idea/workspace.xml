@@ -20,12 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="65debb43-993d-48f7-8056-452a69881bfb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ParenthesisGen.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ValidSudoku.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GiveMeAJob.iml" beforeDir="false" afterPath="$PROJECT_DIR$/GiveMeAJob.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GiveMeAJob/META-INF/GiveMeAJob.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GiveMeAJob/META-INF/GiveMeAJob.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GiveMeAJob/Sols/JZOfferPart4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GiveMeAJob/Sols/JZOfferPart4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Sols/JZOfferPart4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sols/JZOfferPart4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ParenthesisGen.kts" beforeDir="false" afterPath="$PROJECT_DIR$/src/ParenthesisGen.kts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +51,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
-  <component name="RunManager" selected="Kotlin script.ParenthesisGen.kts">
+  <component name="RunManager" selected="Kotlin script.ValidSudoku.kts">
     <configuration name="JavaThread" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="JavaBasic.JavaThread" />
       <module name="GiveMeAJob" />
@@ -122,8 +119,43 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ValidSudoku.kts" type="KotlinStandaloneScriptRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <module name="GiveMeAJob" />
+      <option name="filePath" value="$PROJECT_DIR$/src/ValidSudoku.kts" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/src" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" value="$PROJECT_DIR$/src/ValidSudoku.kts" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/src" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin script.ValidSudoku.kts" />
         <item itemvalue="Kotlin script.ParenthesisGen.kts" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Shopee" />
@@ -162,38 +194,38 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="223" y="67" width="1089" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1610189533253" />
-    <state width="1493" height="261" key="GridCell.Tab.0.bottom" timestamp="1610190262543">
+    <state width="1478" height="207" key="GridCell.Tab.0.bottom" timestamp="1610276598327">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1610190262543" />
-    <state width="1493" height="261" key="GridCell.Tab.0.center" timestamp="1610190262542">
+    <state width="1478" height="207" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1610276598327" />
+    <state width="1478" height="207" key="GridCell.Tab.0.center" timestamp="1610276598327">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1610190262542" />
-    <state width="1493" height="261" key="GridCell.Tab.0.left" timestamp="1610190262542">
+    <state width="1478" height="207" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1610276598327" />
+    <state width="1478" height="207" key="GridCell.Tab.0.left" timestamp="1610276598327">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1610190262542" />
-    <state width="1493" height="261" key="GridCell.Tab.0.right" timestamp="1610190262543">
+    <state width="1478" height="207" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1610276598326" />
+    <state width="1478" height="207" key="GridCell.Tab.0.right" timestamp="1610276598327">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1610190262543" />
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1610190262544">
+    <state width="1478" height="207" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1610276598327" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1610193031071">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1610190262544" />
-    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1610190262544">
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1610193031071" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1610193031071">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1610190262544" />
-    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1610190262544">
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1610193031071" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1610193031071">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1610190262544" />
-    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1610190262544">
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1610193031071" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1610193031071">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1610190262544" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1610193031071" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
