@@ -1,9 +1,4 @@
 package Sols;
-
-import com.sun.scenario.effect.impl.state.AccessHelper;
-import sun.reflect.generics.tree.Tree;
-
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;

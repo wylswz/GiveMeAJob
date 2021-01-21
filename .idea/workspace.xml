@@ -20,9 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="65debb43-993d-48f7-8056-452a69881bfb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ValidSudoku.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IntToRomain.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/NextPermutation.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/firstLastElemInSortedArray.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ParenthesisGen.kts" beforeDir="false" afterPath="$PROJECT_DIR$/src/ParenthesisGen.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GiveMeAJob/META-INF/GiveMeAJob.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GiveMeAJob/META-INF/GiveMeAJob.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GiveMeAJob/Sols/JZOfferSolsPart3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GiveMeAJob/Sols/JZOfferSolsPart3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GiveMeAJob/Sols/TreeLinkNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GiveMeAJob/Sols/TreeLinkNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sols/JZOfferSolsPart3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sols/JZOfferSolsPart3.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +38,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Kotlin File" />
         <option value="Kotlin Script" />
       </list>
     </option>
@@ -51,36 +57,71 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
-  <component name="RunManager" selected="Kotlin script.ValidSudoku.kts">
-    <configuration name="JavaThread" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="JavaBasic.JavaThread" />
+  <component name="RunManager" selected="Kotlin script.firstLastElemInSortedArray.kts">
+    <configuration name="IntToRomain.kts" type="KotlinStandaloneScriptRunConfigurationType" temporary="true" nameIsGenerated="true">
       <module name="GiveMeAJob" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="JavaBasic.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+      <option name="filePath" value="$PROJECT_DIR$/src/IntToRomain.kts" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/src" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" value="$PROJECT_DIR$/src/IntToRomain.kts" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/src" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+    <configuration name="NextPermutation.kts" type="KotlinStandaloneScriptRunConfigurationType" temporary="true" nameIsGenerated="true">
       <module name="GiveMeAJob" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Shopee" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Sols.Shopee" />
-      <module name="GiveMeAJob" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Sols.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+      <option name="filePath" value="$PROJECT_DIR$/src/NextPermutation.kts" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/src" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" value="$PROJECT_DIR$/src/NextPermutation.kts" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/src" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -153,13 +194,47 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="firstLastElemInSortedArray.kts" type="KotlinStandaloneScriptRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <module name="GiveMeAJob" />
+      <option name="filePath" value="$PROJECT_DIR$/src/firstLastElemInSortedArray.kts" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/src" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" value="$PROJECT_DIR$/src/firstLastElemInSortedArray.kts" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/src" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin script.firstLastElemInSortedArray.kts" />
+        <item itemvalue="Kotlin script.NextPermutation.kts" />
+        <item itemvalue="Kotlin script.IntToRomain.kts" />
         <item itemvalue="Kotlin script.ValidSudoku.kts" />
         <item itemvalue="Kotlin script.ParenthesisGen.kts" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Shopee" />
-        <item itemvalue="Application.JavaThread" />
       </list>
     </recent_temporary>
   </component>
@@ -190,42 +265,55 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="223" y="67" width="1089" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1610189533253">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="1514" y="144" width="1089" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1611224634017">
+      <screen x="1366" y="0" width="1920" height="1080" />
     </state>
     <state x="223" y="67" width="1089" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1610189533253" />
-    <state width="1478" height="207" key="GridCell.Tab.0.bottom" timestamp="1610276598327">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="1514" y="144" key="#com.intellij.execution.impl.EditConfigurationsDialog/1366.0.1920.1080/40.27.1326.741@1366.0.1920.1080" timestamp="1611224634017" />
+    <state width="1874" height="257" key="GridCell.Tab.0.bottom" timestamp="1611230850207">
+      <screen x="1366" y="0" width="1920" height="1080" />
     </state>
     <state width="1478" height="207" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1610276598327" />
-    <state width="1478" height="207" key="GridCell.Tab.0.center" timestamp="1610276598327">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1874" height="257" key="GridCell.Tab.0.bottom/1366.0.1920.1080/40.27.1326.741@1366.0.1920.1080" timestamp="1611230850207" />
+    <state width="1874" height="257" key="GridCell.Tab.0.center" timestamp="1611230850206">
+      <screen x="1366" y="0" width="1920" height="1080" />
     </state>
     <state width="1478" height="207" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1610276598327" />
-    <state width="1478" height="207" key="GridCell.Tab.0.left" timestamp="1610276598327">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1874" height="257" key="GridCell.Tab.0.center/1366.0.1920.1080/40.27.1326.741@1366.0.1920.1080" timestamp="1611230850206" />
+    <state width="1874" height="257" key="GridCell.Tab.0.left" timestamp="1611230850206">
+      <screen x="1366" y="0" width="1920" height="1080" />
     </state>
     <state width="1478" height="207" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1610276598326" />
-    <state width="1478" height="207" key="GridCell.Tab.0.right" timestamp="1610276598327">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1874" height="257" key="GridCell.Tab.0.left/1366.0.1920.1080/40.27.1326.741@1366.0.1920.1080" timestamp="1611230850206" />
+    <state width="1874" height="257" key="GridCell.Tab.0.right" timestamp="1611230850206">
+      <screen x="1366" y="0" width="1920" height="1080" />
     </state>
     <state width="1478" height="207" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1610276598327" />
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1610193031071">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1874" height="257" key="GridCell.Tab.0.right/1366.0.1920.1080/40.27.1326.741@1366.0.1920.1080" timestamp="1611230850206" />
+    <state width="1874" height="318" key="GridCell.Tab.1.bottom" timestamp="1611225656299">
+      <screen x="1366" y="0" width="1920" height="1080" />
     </state>
     <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1610193031071" />
-    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1610193031071">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1874" height="318" key="GridCell.Tab.1.bottom/1366.0.1920.1080/40.27.1326.741@1366.0.1920.1080" timestamp="1611225656299" />
+    <state width="1874" height="318" key="GridCell.Tab.1.center" timestamp="1611225656299">
+      <screen x="1366" y="0" width="1920" height="1080" />
     </state>
     <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1610193031071" />
-    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1610193031071">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1874" height="318" key="GridCell.Tab.1.center/1366.0.1920.1080/40.27.1326.741@1366.0.1920.1080" timestamp="1611225656299" />
+    <state width="1874" height="318" key="GridCell.Tab.1.left" timestamp="1611225656299">
+      <screen x="1366" y="0" width="1920" height="1080" />
     </state>
     <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1610193031071" />
-    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1610193031071">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1874" height="318" key="GridCell.Tab.1.left/1366.0.1920.1080/40.27.1326.741@1366.0.1920.1080" timestamp="1611225656299" />
+    <state width="1874" height="318" key="GridCell.Tab.1.right" timestamp="1611225656299">
+      <screen x="1366" y="0" width="1920" height="1080" />
     </state>
     <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1610193031071" />
+    <state width="1874" height="318" key="GridCell.Tab.1.right/1366.0.1920.1080/40.27.1326.741@1366.0.1920.1080" timestamp="1611225656299" />
+    <state x="2018" y="247" width="616" height="612" key="find.popup" timestamp="1611224191416">
+      <screen x="1366" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2018" y="247" width="616" height="612" key="find.popup/1366.0.1920.1080/40.27.1326.741@1366.0.1920.1080" timestamp="1611224191416" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
