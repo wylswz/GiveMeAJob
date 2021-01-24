@@ -51,8 +51,14 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
+<<<<<<< HEAD
   <component name="RunManager" selected="Kotlin script.Partition.kts">
     <configuration name="IntToRomain.kts" type="KotlinStandaloneScriptRunConfigurationType" temporary="true" nameIsGenerated="true">
+=======
+  <component name="RunManager" selected="Application.JavaThread">
+    <configuration name="JavaThread" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="JavaBasic.JavaThread" />
+>>>>>>> e061c4a (asd)
       <module name="GiveMeAJob" />
       <option name="filePath" value="$PROJECT_DIR$/src/IntToRomain.kts" />
       <option name="vmParameters" />
@@ -224,11 +230,17 @@
     </configuration>
     <recent_temporary>
       <list>
+<<<<<<< HEAD
         <item itemvalue="Kotlin script.Partition.kts" />
         <item itemvalue="Kotlin script.firstLastElemInSortedArray.kts" />
         <item itemvalue="Kotlin script.NextPermutation.kts" />
         <item itemvalue="Kotlin script.IntToRomain.kts" />
         <item itemvalue="Kotlin script.ValidSudoku.kts" />
+=======
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Shopee" />
+        <item itemvalue="Application.JavaThread" />
+>>>>>>> e061c4a (asd)
       </list>
     </recent_temporary>
   </component>
