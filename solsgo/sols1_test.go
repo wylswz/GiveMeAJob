@@ -37,3 +37,28 @@ func TestStrStr(t *testing.T) {
 func TestNq(t *testing.T) {
 	fmt.Println(solveNQueens(9))
 }
+
+func TestDelivery(t *testing.T) {
+	d := [][]int{
+		[]int{2, 4},
+		[]int{2, 5},
+		[]int{3, 1},
+		[]int{3, 2},
+		[]int{3, 7},
+		[]int{3, 1},
+		[]int{4, 4},
+		[]int{1, 3},
+		[]int{5, 2},
+	}
+
+	fmt.Println(boxDelivering(d, 5, 5, 7))
+}
+
+func TestExist(t *testing.T) {
+	board := [][]byte{
+		[]byte{'a', 'b'},
+		[]byte{'c', 'd'},
+	}
+
+	fmt.Println(exist(board, "bacd"))
+}
