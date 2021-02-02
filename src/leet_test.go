@@ -17,7 +17,7 @@ func TestCombinationSum(t *testing.T) {
 func TestCopy(t *testing.T) {
 	a := make([]int, 3)
 	copy(a, []int{1, 2})
-	//log.Println(a)
+	log.Println(a)
 	copy(a, []int{3, 4})
 	log.Println(a)
 }
