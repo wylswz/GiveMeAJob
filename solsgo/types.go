@@ -15,3 +15,10 @@ type StackParen struct {
 	Stack int
 	Count int
 }
+
+type Node struct {
+	Val   int
+	Left  *Node
+	Right *Node
+	Next  *Node
+}
